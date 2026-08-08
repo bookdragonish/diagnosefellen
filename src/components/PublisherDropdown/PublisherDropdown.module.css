@@ -7,6 +7,7 @@
 .trigger {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 8px;
   padding: 13px 16px;
   background: #fff;
@@ -20,6 +21,12 @@
   min-width: 160px;
   height: 100%;
   transition: border-color 0.15s;
+}
+
+.triggerContent {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .trigger:hover:not(:disabled) {
@@ -62,7 +69,6 @@
   margin: 0;
   list-style: none;
   z-index: 100;
-  
 }
 
 /* ── Individual option ── */
@@ -87,6 +93,16 @@
 .logoSlot {
   width: 32px;
   height: 32px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoSlotSelected {
+  width: 15px;
+  height: 15px;
+  padding-right: 10px;
   flex-shrink: 0;
   display: flex;
   align-items: center;
