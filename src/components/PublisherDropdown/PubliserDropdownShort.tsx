@@ -1,7 +1,5 @@
 import { useState, useRef, useEffect } from "react";
 import styles from "./PublisherDropdown.module.css";
-import { useFetchPublishers } from "../../hooks/useFetchPublishers";
-
 interface PublisherDropdownProps {
   value?: string | undefined;
   onChange?: (publisherId: string | undefined) => void;
