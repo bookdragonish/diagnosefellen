@@ -19,7 +19,7 @@
 .about_section .paragraph_article {
   display: flex;
   flex-direction: column;
-  border-left: 1.5px solid var(--main-color);
+  border-left: 2px solid var(--main-color);
   margin-inline: 20px;
 }
 
