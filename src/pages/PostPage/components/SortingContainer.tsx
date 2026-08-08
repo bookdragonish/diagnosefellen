@@ -1,7 +1,8 @@
 import styles from "./SortingContainer.module.css";
-import PublisherSelect from "../../../components/PublisherDropdown/PublisherDropdown";
+
 import { ARTICLE_TYPES, type ArticleType } from "../../../types/post.types";
 import { ArrowDown, ArrowUp, ChevronDown } from "lucide-react";
+import PublisherDropdownShort from "../../../components/PublisherDropdown/PubliserDropdownShort";
 //import SearchBar from "./SearchBar";
 
 //This component was generated using claude.ai
@@ -68,7 +69,7 @@ function SortingContainer({
         </div>
 
         {/* Publisher filter */}
-        <PublisherSelect
+        <PublisherDropdownShort
           value={filterPublisher}
           onChange={setFilterPublisher}
         />
